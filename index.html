@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Microtunery</title>
+    <meta content="width=device-width, initial-scale=0.6" name="viewport">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="./audiojs/audiojs/audio.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="buttons.css">
+</head>
+<body background="bricks.png">
+    <img src="cellar_sign.png" onclick="console.log('cellar button')" style="cursor:pointer; padding-left:1%;"></img>
+
+    <div id="wrapper">
+        <img id="myImg" alt="Album Artwork" src="http://www.mikewallmusic.com/wp-content/themes/soundcheck/images/default-album-artwork.png" style="width:75px;height:75px;"></img>
+        <h1 style="font-size: 50px; display: inline-block; color: #fff;">Sample Title</h1>
+        <audio preload></audio>
+        <ol style="background-color: #000;">
+            <li><a href="#" data-src="../mp3/bensound-dubstep.mp3">Welcome</a></li>
+            <li><a href="#" data-src="../mp3/bensound-cute.mp3">Cute</a></li>
+            <li><a href="#" data-src="../mp3/bensound-buddy.mp3">Snowy Night</a></li>
+            <li><a href="#" data-src="../mp3/bensound-acousticbreeze.mp3">Acoustic Breeze</a></li>
+            <li><a href="#" data-src="../mp3/bensound-epic.mp3">Outro</a></li>
+        </ol>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        
+          <!-- The Close Button -->
+          <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content" id="img01">
+        
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }    
+    </script>
+</body>
+</html>
