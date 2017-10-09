@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="buttons.css">
 </head>
-<body background="bricks.png">
-    <img src="cellar_sign.png" onclick="console.log('cellar button')" style="cursor:pointer; padding-left:1%;"></img>
+<body background="res/bricks.png">
+    <img src="res/cellar_sign.png" onclick="console.log('cellar button')" style="cursor:pointer; padding-left:1%;"></img>
 
     <div id="wrapper">
         <img id="myImg" alt="Album Artwork" src="http://www.mikewallmusic.com/wp-content/themes/soundcheck/images/default-album-artwork.png" style="width:75px;height:75px;"></img>
-        <h1 style="font-size: 50px; display: inline-block; color: #fff;">Sample Title</h1>
+        <h1 style="font-size: 50px; display: inline-block; color: #fff;">Winter Jam</h1>
         <audio preload></audio>
         <ol style="background-color: #000;">
             <li><a href="#" data-src="../mp3/bensound-dubstep.mp3">Welcome</a></li>
@@ -24,7 +24,11 @@
             <li><a href="#" data-src="../mp3/bensound-acousticbreeze.mp3">Acoustic Breeze</a></li>
             <li><a href="#" data-src="../mp3/bensound-epic.mp3">Outro</a></li>
         </ol>
+        <form method="get" action="WinterJam.zip" style="float:right;">
+                <button type="submit" style="background-color: #ffff00">⬇ Take Some Home</button>
+        </form>
     </div>
+    
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -38,6 +42,7 @@
           <!-- Modal Caption (Image Text) -->
           <div id="caption"></div>
     </div>
+    <div class="background"></div>
 
     <script>
         // Get the modal
