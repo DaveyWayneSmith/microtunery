@@ -8,12 +8,15 @@
     <script src="./audiojs/audiojs/audio.min.js"></script>
     <script src="index.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="buttons.css">
 </head>
 <body background="res/bricks.png">
     <img src="res/cellar_sign.png" onclick="location.href = 'cellar.html';" style="cursor:pointer; padding-left:1%; display:block; max-width:50%;"></img>
     <div id="button-wrap">
         <div id="share-buttons">
+            <!-- Info
+            <a onclick="console.log('more info');" style="cursor:pointer;">
+                <img src="../res/info.png" alt="More Information" />
+            </a> -->
             <!-- Twitter -->
             <a href="https://twitter.com/share?url=http://microtunery.xyz&amp;hashtags=FreshLocalMusic" target="_blank">
                 <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
@@ -30,15 +33,15 @@
         </div>
     </div>
     <div id="wrapper">
-        <img id="myImg" alt="Album Artwork" src="http://www.mikewallmusic.com/wp-content/themes/soundcheck/images/default-album-artwork.png" style="width:100px;height:100px;cursor:pointer;"></img>
+        <img id="myImg" alt="" src="../art/AlbumArt.png" style="width:100px;height:100px;cursor:pointer;padding-top:5px;padding-left:5px;padding-bottom:5px;"></img>
         <h1 style="font-size: 50px; display: inline-block; color: #fff;">Winter Jam</h1>
-        <audio preload></audio>
+        <audio preload autoplay></audio>
         <ol style="background-color: #000;">
-            <li><a href="#" data-src="../mp3/bensound-dubstep.mp3">Welcome</a></li>
-            <li><a href="#" data-src="../mp3/bensound-cute.mp3">Cute</a></li>
-            <li><a href="#" data-src="../mp3/bensound-buddy.mp3">Snowy Night</a></li>
-            <li><a href="#" data-src="../mp3/bensound-acousticbreeze.mp3">Acoustic Breeze</a></li>
-            <li><a href="#" data-src="../mp3/bensound-epic.mp3">Outro</a></li>
+            <li><a href="#" data-src="../mp3/Welcome.mp3">Welcome</a></li>
+            <li><a href="#" data-src="../mp3/Changing of the Seasons.mp3">Changing of the Seasons</a></li>
+            <li><a href="#" data-src="../mp3/Snow.mp3">Snow</a></li>
+            <li><a href="#" data-src="../mp3/Christmas Cards.mp3">Christmas Cards</a></li>
+            <li><a href="#" data-src="../mp3/Outro (O Christmas Tree).mp3">Outro (O Christmas Tree)</a></li>
         </ol>
     </div>
     
